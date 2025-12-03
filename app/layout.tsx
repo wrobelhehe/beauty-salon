@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import type React from "react";
 import { Cormorant_Garamond, Space_Grotesk } from "next/font/google";
 import "./globals.css";
+import { Header } from "./components/Header";
 
 const display = Cormorant_Garamond({
   subsets: ["latin"],
@@ -49,6 +50,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
     <html lang="en" className={`${display.variable} ${sans.variable}`} suppressHydrationWarning>
       <body className="bg-noir text-blush antialiased">
         <div className="fixed inset-0 -z-10 layered-bg" aria-hidden />
+        <Header />
         {children}
       </body>
     </html>

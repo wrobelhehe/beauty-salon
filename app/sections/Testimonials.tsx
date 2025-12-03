@@ -4,7 +4,7 @@ import { Reveal } from "../components/animations/Reveal";
 
 export function Testimonials() {
   return (
-    <section className="section-shell py-16 sm:py-24">
+    <section className="section-shell py-16 sm:py-24" id="testimonials">
       <SectionHeader
         eyebrow="Voices"
         title="Quiet praise from those who lingered longer."

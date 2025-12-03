@@ -9,10 +9,10 @@ const config: Config = {
   theme: {
     extend: {
       colors: {
-        blush: "#F6E8E0",
-        rose: "#E7C7B4",
-        noir: "#0F0C0A",
-        gold: "#D6B37F",
+        blush: "#FCE7F3",
+        rose: "#F5B3C8",
+        noir: "#0F090D",
+        gold: "#EEC4D7",
         "dusk-veil": "#1A1410",
         "veil-glow": "rgba(255, 235, 215, 0.08)"
       },
@@ -21,8 +21,8 @@ const config: Config = {
         sans: ["Space_Grotesk", "var(--font-sans)", "sans-serif"]
       },
       boxShadow: {
-        soft: "0 20px 60px rgba(0, 0, 0, 0.25)",
-        glow: "0 0 50px rgba(214, 179, 127, 0.35)"
+        soft: "0 24px 70px rgba(0, 0, 0, 0.3)",
+        glow: "0 0 60px rgba(245, 179, 200, 0.38)"
       },
       backdropBlur: {
         glow: "18px"
@@ -31,7 +31,8 @@ const config: Config = {
         'curve-xl': "28px"
       },
       backgroundImage: {
-        "hero-gradient": "radial-gradient(circle at 20% 20%, rgba(214, 179, 127, 0.18), transparent 28%), radial-gradient(circle at 80% 30%, rgba(231, 199, 180, 0.18), transparent 26%), linear-gradient(135deg, #0F0C0A 0%, #1A1410 50%, #0F0C0A 100%)",
+        "hero-gradient":
+          "radial-gradient(circle at 18% 24%, rgba(255, 195, 215, 0.28), transparent 32%), radial-gradient(circle at 76% 12%, rgba(255, 168, 196, 0.2), transparent 30%), linear-gradient(135deg, #0F090D 0%, #150910 48%, #0F090D 100%)",
         "glass": "linear-gradient(135deg, rgba(255,255,255,0.12), rgba(255,255,255,0.02))"
       }
     }
