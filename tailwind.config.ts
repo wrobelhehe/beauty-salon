@@ -32,7 +32,7 @@ const config: Config = {
       },
       backgroundImage: {
         "hero-gradient":
-          "radial-gradient(circle at 18% 24%, rgba(255, 195, 215, 0.28), transparent 32%), radial-gradient(circle at 76% 12%, rgba(255, 168, 196, 0.2), transparent 30%), linear-gradient(135deg, #0F090D 0%, #150910 48%, #0F090D 100%)",
+          "radial-gradient(circle at 18% 24%, rgba(255, 195, 215, 0.22), transparent 32%), radial-gradient(circle at 76% 12%, rgba(255, 168, 196, 0.16), transparent 30%), linear-gradient(135deg, #050308 0%, #0c060d 52%, #050308 100%)",
         "glass": "linear-gradient(135deg, rgba(255,255,255,0.12), rgba(255,255,255,0.02))"
       }
     }
