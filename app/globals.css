@@ -14,8 +14,8 @@
 }
 
 body {
-  background: #0f0c0a;
-  color: #f6e8e0;
+  background: radial-gradient(circle at 18% 22%, rgba(255, 205, 225, 0.08), transparent 32%), #0f090d;
+  color: #f9dfe9;
   font-family: var(--font-sans);
   min-height: 100vh;
   line-height: 1.6;

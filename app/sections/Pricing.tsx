@@ -24,7 +24,7 @@ const tiers = [
 
 export function Pricing() {
   return (
-    <section className="section-shell py-16 sm:py-24">
+    <section className="section-shell py-16 sm:py-24" id="pricing">
       <div className="glass-panel gradient-border p-8 sm:p-12">
         <div className="flex flex-col gap-6 sm:flex-row sm:items-center sm:justify-between">
           <div>

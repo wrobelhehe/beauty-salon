@@ -3,7 +3,7 @@ import { Reveal } from "../components/animations/Reveal";
 
 export function Story() {
   return (
-    <section className="section-shell py-16 sm:py-24">
+    <section className="section-shell py-16 sm:py-24" id="story">
       <div className="grid gap-10 lg:grid-cols-[1.1fr_0.9fr] items-center">
         <div className="space-y-4">
           <Reveal>
