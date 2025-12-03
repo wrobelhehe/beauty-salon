@@ -1,0 +1,66 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  color-scheme: dark;
+  --matte-shadow: 0 20px 80px rgba(0, 0, 0, 0.35);
+  --glass-border: 1px solid rgba(255, 255, 255, 0.08);
+  --panel-radius: 24px;
+}
+
+* {
+  scroll-behavior: smooth;
+}
+
+body {
+  background: #0f0c0a;
+  color: #f6e8e0;
+  font-family: var(--font-sans);
+  min-height: 100vh;
+  line-height: 1.6;
+}
+
+.section-shell {
+  @apply max-w-6xl mx-auto px-4 sm:px-6 lg:px-8;
+}
+
+.glass-panel {
+  background: linear-gradient(135deg, rgba(255, 255, 255, 0.08), rgba(255, 255, 255, 0.02));
+  border: var(--glass-border);
+  border-radius: var(--panel-radius);
+  box-shadow: var(--matte-shadow);
+}
+
+.gradient-border {
+  position: relative;
+  border-radius: var(--panel-radius);
+}
+
+.gradient-border::before {
+  content: "";
+  position: absolute;
+  inset: -1px;
+  border-radius: inherit;
+  padding: 1px;
+  background: linear-gradient(135deg, rgba(214, 179, 127, 0.6), rgba(231, 199, 180, 0.2));
+  -webkit-mask: linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0);
+  -webkit-mask-composite: xor;
+  mask-composite: exclude;
+  pointer-events: none;
+}
+
+.layered-bg {
+  background-image: radial-gradient(circle at 20% 20%, rgba(214, 179, 127, 0.12), transparent 22%), radial-gradient(circle at 80% 30%, rgba(231, 199, 180, 0.12), transparent 22%), linear-gradient(135deg, #0f0c0a 0%, #1a1410 50%, #0f0c0a 100%);
+  background-size: cover;
+}
+
+a {
+  text-decoration: none;
+}
+
+.reduced-motion * {
+  animation-duration: 0.001ms !important;
+  animation-iteration-count: 1 !important;
+  transition-duration: 0.001ms !important;
+}
